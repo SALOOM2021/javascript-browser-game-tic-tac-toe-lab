@@ -1,0 +1,292 @@
+body {
+  background: linear-gradient(to right, #0C4160, #C3CEDA);
+  /* Use a system font, if none are available use an available sans-sarif */
+  font-family: "Sour Gummy";
+  margin: 0;
+  text-align: center;
+}
+
+.bdark {
+  background: linear-gradient(to right, #071330, #0C4160);
+}
+
+#playerXInput,
+#playerOInput {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 9px;
+  border: 3px solid #071330;
+  background: none;
+  color: #071330;
+  font-weight: bold;
+  font-size: 12px;
+}
+#playerXName{
+  font-size: 30px;
+}
+#playerOName{
+  font-size: 30px;
+}
+.input{
+  border: 3px solid #c8cbd3;
+}
+.input::placeholder{
+  color: white;
+}
+#playerXInput::placeholder {
+  color: #ffffff;
+}
+
+#playerOInput::placeholder {
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: "Sour Gummy";
+  margin-top: 15px;
+}
+
+h2 {
+  font-family: "Sour Gummy";
+  font-size: 30px;
+}
+
+.h2dark {
+  color: #C3CEDA;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 325px;
+  text-align: center;
+  margin: auto;
+}
+
+.sqr {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 3px solid rgb(255, 255, 255, 0.2);
+  font-size: 75px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Sour Gummy";
+}
+
+.countContainer-X {
+  border-top: 1px solid rgb(255, 255, 255, 0.4);
+  width: 200px;
+  color: #071330;
+  height: 250px;
+  margin-left: 130px;
+  margin-top: 140px;
+}
+
+
+
+.countContainer-O {
+  border-top: 1px solid rgb(255, 255, 255, 0.4);
+  ;
+  width: 200px;
+  color: #071330;
+  height: 250px;
+  margin-right: 130px;
+  margin-top: 140px;
+}
+
+.playerX{
+  color: white;
+}
+.playerO{
+  color: white;
+}
+header {
+
+  color: white;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+
+main {
+  display: flex;
+}
+
+#parent-countContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#countXWins,
+#countOWins {
+  margin: 0 auto;
+  width: 50%;
+  background: none;
+  color: rgba(255, 255, 255, 0.667);
+  border-radius: px;
+  font-size: 86px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*----------------------------*/
+ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 25px black;
+  padding: 0;
+  list-style: none;
+  width: 30%;
+  margin: 0 auto;
+
+
+}
+
+li {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 10px;
+  text-align: center;
+  transition: 0.5s;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: "Sour Gummy"
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.fa-solid {
+  pointer-events: none;
+
+
+}
+
+#reset {
+  background: none;
+  border: 0 solid;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#reset:hover {
+  color: #d7d8da;
+}
+
+#mode:hover {
+  color: #d7d8da;
+}
+
+#mode {
+  background: none;
+  border: 0 solid;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Sour Gummy"
+}
+
+#footer {
+  margin-top: 100px;
+}
+
+.message {
+  height: 30px;
+  color: #0e2457;
+  text-shadow: 0 0 5px rgba(163, 234, 234, 0.849), 0 0 10px rgba(163, 234, 234, 0.849), 0 0 20px rgba(163, 234, 234, 0.849), 0 0 40px #0ff;
+  animation: glow 0.5s infinite alternate;
+  height: 30px;
+  font-size: 30px;
+  font-family: "Sour Gummy";
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(163, 234, 234, 0.849), 0 0 10px rgba(163, 234, 234, 0.849), 0 0 20px rgba(163, 234, 234, 0.849), 0 0 40px rgba(163, 234, 234, 0.849);
+  }
+
+  to {
+    text-shadow: 0 0 10px rgba(163, 234, 234, 0.849), 0 0 20px rgba(163, 234, 234, 0.849), 0 0 40px rgba(163, 234, 234, 0.849), 0 0 80px rgba(163, 234, 234, 0.849);
+  }
+}
+
+/*------------board style---------------*/
+
+.i0 {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.i1 {
+  border-top: none;
+}
+
+.i2 {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.i3 {
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.i4 {
+  border: none
+}
+
+.i5 {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.i6 {
+  border-left: none;
+  border-bottom: none;
+}
+
+.i7 {
+  border-left: none;
+  border-bottom: none;
+}
+
+.i8 {
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.win {
+  animation: breath 0.8s ease-in-out infinite;
+}
+
+@keyframes breath {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

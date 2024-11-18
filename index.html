@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Doto:wght@100..900&family=Londrina+Shadow&family=Poiret+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script defer src="./js/app.js"></script>
+  <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Tic-Tac-Toe</h1>
+    </nav>
+  </header>
+  <main>
+
+    <div class="countContainer-X">
+      <div id="player-name-containerX">
+        <input type="text" id="playerXInput" class="playerx" placeholder="Enter Player X Name"onkeypress="handleEnter(event, 'playerXInput', 'playerXName')">
+        <p id="playerXName"></p>  
+      </div>
+
+      <p id="countXWins">0</p>
+    </div>
+
+    <section class="board">
+
+      <div class="sqr i0" id="0"></div>
+      <div class="sqr i1" id="1"></div>
+      <div class="sqr i2" id="2"></div>
+      <div class="sqr i3" id="3"></div>
+      <div class="sqr i4" id="4"></div>
+      <div class="sqr i5" id="5"></div>
+      <div class="sqr i6" id="6"></div>
+      <div class="sqr i7" id="7"></div>
+      <div class="sqr i8" id="8"></div>
+
+    </section>
+
+    <div class="countContainer-O">
+      <div id="player-name-containerO">
+        <input type="text" id="playerOInput"class="playero" placeholder="Enter Player O Name"onkeypress="handleEnter(event, 'playerOInput', 'playerOName')">
+        <p id="playerOName"></p>
+      </div>
+      <p id="countOWins">0</p>
+    </div>
+  </main>
+  <div id="overlay">
+    <h2 id="message"></h2>
+  </div>
+  <ul>
+    <li class="fa-solid" id="xTurn">X</li>
+    <li><button id="reset">Reset</button></li>
+    <li><img src="https://i.imgur.com/4HmHq0Q.png"></li>
+    <li><button id="mode">Dark Mode</button></li>
+    <li class="fa-solid" id="oTurn">O</li>
+    <div class="marker"></div>
+  </ul>
+
+</body>
+
+</html>
